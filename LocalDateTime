@@ -1,0 +1,18 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class DateTimeFormatterExample {
+    public static void main(String[] args) {
+        // Create a LocalDateTime object representing a specific date and time
+        LocalDateTime myDateTime = LocalDateTime.of(2023, 5, 22, 14, 30);
+
+        // Define a custom date and time format
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+
+        // Format the LocalDateTime object using the formatter
+        String formattedDateTime = myDateTime.format(formatter);
+
+        // Print the formatted date and time
+        System.out.println("Formatted Date and Time: " + formattedDateTime);
+    }
+}
